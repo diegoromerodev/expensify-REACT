@@ -1,10 +1,9 @@
 import React from 'react';
 
-
 const HelpPage = () => (
   <div>
-    This is my help component
+    This is from my help component
   </div>
-)
+);
 
-export default HelpPage
+export default HelpPage;

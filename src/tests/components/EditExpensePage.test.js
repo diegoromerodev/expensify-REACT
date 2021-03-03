@@ -1,7 +1,7 @@
-import React from 'react'
-import {shallow} from 'enzyme'
-import {EditExpensePage} from '../../components/EditExpense'
-import expenses from '../fixtures/expenses'
+import React from 'react';
+import { shallow } from 'enzyme';
+import expenses from '../fixtures/expenses';
+import { EditExpensePage } from '../../components/EditExpensePage';
 
 let editExpense, removeExpense, history, wrapper;
 
@@ -29,9 +29,10 @@ test('should handle editExpense', () => {
   expect(editExpense).toHaveBeenLastCalledWith(expenses[2].id, expenses[2]);
 });
 
-test('Should handle remove expense', () => {
-  wrapper.find('button').simulate('click')
-  expect(history.push).toHaveBeenLastCalledWith('/')
-  expect(removeExpense).toHaveBeenLastCalledWith({id: expenses[2].id})
-})
-
+test('should handle removeExpense', () => {
+  wrapper.find('button').simulate('click');
+  expect(history.push).toHaveBeenLastCalledWith('/');
+  expect(removeExpense).toHaveBeenLastCalledWith({
+    id: expenses[2].id
+  });
+});
