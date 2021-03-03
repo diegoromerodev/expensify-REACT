@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render a single list item 1`] = `
+<div>
+  <Link
+    replace={false}
+    to="/edit/123"
+  >
+    <h3>
+      Credit Card
+    </h3>
+  </Link>
+  <p>
+    1256
+     - 
+    864000000
+  </p>
+</div>
+`;
